@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تاريخ المغرب عبر العصور</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #c83232;
+            --secondary-color: #006233;
+            --accent-color: #f9d03b;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            line-height: 1.8;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Amiri', serif;
+        }
+        
+        .timeline-container {
+            position: relative;
+        }
+        
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--secondary-color);
+            top: 0;
+            bottom: 0;
+            right: 50px;
+            margin-left: -3px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px 10px 70px;
+            position: relative;
+            background-color: inherit;
+            width: 100%;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: 40px;
+            background-color: white;
+            border: 4px solid var(--primary-color);
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://upload.wikimedia.org/wikipedia/commons/f/f4/Koutbia.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        
+        .section-title {
+            border-right: 5px solid var(--primary-color);
+            padding-right: 15px;
+        }
+        
+        .event-card {
+            border-right: 3px solid var(--secondary-color);
+            padding: 15px;
+            margin: 10px 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .event-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+        }
+        
+        .year-badge {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 8px;
+        }
+        
+        .image-caption {
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .header-gradient {
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        }
+        
+        .divider {
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+        }
+        
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section w-full py-20 px-4 mb-8 text-center">
+        <h1 class="text-5xl font-bold mb-4">تاريخ المغرب عبر العصور</h1>
+        <p class="text-xl mb-6">رحلة عبر الزمن من سنة 681 إلى 2025</p>
+        <div class="divider w-24 mx-auto"></div>
+    </div>
+
+    <div class="page-container px-4">
+        <!-- Introduction -->
+        <section class="mb-16">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold mb-6 section-title">المغرب - لمحة تاريخية</h2>
+                <p class="mb-4">يمتد تاريخ المغرب عبر آلاف السنين، حيث أثبتت الاكتشافات الأثرية وجود الإنسان في هذه المنطقة منذ العصر الحجري القديم. استوطن الإنسان المغرب منذ أكثر من 300 ألف سنة، وشهدت أرض المغرب تعاقب العديد من الحضارات والممالك والدول، من الأمازيغ الأصليين إلى الفينيقيين والرومان والفتح الإسلامي وصولاً إلى المغرب المعاصر. هذه الرحلة التاريخية تقدم نظرة شاملة عن الأحداث المهمة التي شكلت ملامح المملكة المغربية كما نعرفها اليوم.</p>
+                <p>تعد الحضارة الأمازيغية من أقدم الحضارات التي استوطنت شمال أفريقيا، وقد أسست ممالك قوية في المنطقة قبل قدوم الفينيقيين والرومان. ومع الفتح الإسلامي في القرن السابع الميلادي، بدأت مرحلة جديدة في تاريخ المغرب، حيث تعاقبت على حكمه دول وسلالات متعددة، كان لكل منها بصمتها الخاصة في الحضارة والثقافة المغربية.</p>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <div class="timeline-container mb-16">
+            <!-- المغرب القديم والأمازيغ -->
+            <section class="timeline-item mb-20">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-3xl font-bold mb-6 section-title">المغرب القديم وحضارة الأمازيغ</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <p class="mb-4">سكن الأمازيغ شمال أفريقيا منذ فجر التاريخ، وقد أسسوا ممالك قوية في المنطقة قبل وصول الفينيقيين والرومان. كانت لهم حضارة متطورة تميزت بالزراعة وتربية الماشية وصناعة الفخار والنسيج والأدوات المعدنية. وقد تميز الأمازيغ بالشجاعة والمقاومة ضد الغزاة الأجانب على مر العصور.</p>
+                            <p>خلال القرن الثالث قبل الميلاد، وصل الفينيقيون إلى سواحل المغرب وأسسوا مستعمرات تجارية، ثم جاء الرومان في القرن الأول قبل الميلاد واحتلوا المنطقة وأطلقوا عليها اسم "موريتانيا الطنجية". وقد استمر الحكم الروماني في المغرب حتى القرن الخامس الميلادي، عندما غزا الوندال شمال أفريقيا.</p>
+                        </div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Vue_medina_fes.jpg" alt="مدينة فاس التاريخية" class="w-full h-auto rounded-lg mb-2">
+                            <p class="image-caption rounded-b-lg">جانب من المواقع التاريخية في المغرب</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-8 mb-4">أهم الأحداث:</h3>
+                    <div class="space-y-4">
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">500,000 ق.م</span>بداية وجود الإنسان في المغرب</h4>
+                            <p>اكتشافات أثرية في منطقة إغود تؤكد وجود الإنسان العاقل في المغرب منذ حوالي 300 ألف سنة، مما يجعلها من أقدم المواقع البشرية في العالم.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1100 ق.م</span>تأسيس أول المستعمرات الفينيقية</h4>
+                            <p>أسس الفينيقيون مستعمرات تجارية على سواحل المغرب، وكانت أهمها ليكسوس (قرب مدينة العرائش الحالية).</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">146 ق.م</span>بداية النفوذ الروماني</h4>
+                            <p>بعد سقوط قرطاج، بدأت روما بتوسيع نفوذها في شمال أفريقيا، وأصبحت المنطقة التي تُعرف اليوم بالمغرب جزءاً من مقاطعة موريتانيا الطنجية.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">429 م</span>غزو الوندال</h4>
+                            <p>هاجم الوندال شمال أفريقيا وأنهوا الحكم الروماني في المنطقة، لكن سيطرتهم على المغرب كانت محدودة.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">534 م</span>البيزنطيون يستعيدون السيطرة</h4>
+                            <p>استعادت الإمبراطورية البيزنطية السيطرة على أجزاء من شمال أفريقيا، لكن نفوذها في المغرب كان ضعيفاً ومقتصراً على المناطق الساحلية.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- الفتح الإسلامي والدول المستقلة الأولى -->
+            <section class="timeline-item mb-20">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-3xl font-bold mb-6 section-title">الفتح الإسلامي والدول المستقلة الأولى (681-1060)</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <p class="mb-4">بدأت حملات الفتح الإسلامي لبلاد المغرب في النصف الثاني من القرن السابع الميلادي (حوالي 681م)، واستغرق الفتح الكامل للمنطقة نحو نصف قرن. وصل الإسلام إلى المغرب الأقصى على يد عقبة بن نافع الفهري، ثم استكمل الفتح القائد موسى بن نصير في عهد الخليفة الأموي الوليد بن عبد الملك.</p>
+                            <p>خلال القرن الثامن الميلادي، شهد المغرب ثورة قبائل الأمازيغ ضد الحكم الأموي (740-743م)، وهي المعروفة بثورة البربر، والتي أدت إلى استقلال المغرب عن الخلافة الأموية. وبعدها ظهرت دول مستقلة في المغرب مثل دولة بني مدرار (757-976م) ودولة الأدارسة (788-974م) التي تأسست على يد إدريس الأول، المنحدر من سلالة النبي محمد، والذي استطاع توحيد قبائل الأمازيغ تحت راية الإسلام.</p>
+                        </div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/%D9%81%D8%AA%D9%88%D8%AD_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8.jpg/640px-%D9%81%D8%AA%D9%88%D8%AD_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8.jpg" alt="الفتح الإسلامي للمغرب" class="w-full h-auto rounded-lg mb-2">
+                            <p class="image-caption rounded-b-lg">خريطة توضح مسار الفتح الإسلامي لبلاد المغرب</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-8 mb-4">أهم الأحداث:</h3>
+                    <div class="space-y-4">
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">681 م</span>حملة عقبة بن نافع</h4>
+                            <p>وصلت حملات الفتح الإسلامي بقيادة عقبة بن نافع إلى المغرب الأقصى، حيث بلغ المحيط الأطلسي ودخل في معارك متعددة مع قبائل الأمازيغ والبيزنطيين.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">705-710 م</span>فتح المغرب الأقصى</h4>
+                            <p>استكمل موسى بن نصير فتح المغرب الأقصى، وتمكن من السيطرة على المنطقة وإدخال الإسلام إليها بشكل كامل. وقد أصبح المغرب جزءاً من الدولة الأموية.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">712 م</span>عبور طارق بن زياد</h4>
+                            <p>انطلق طارق بن زياد من طنجة لفتح الأندلس، وعبر المضيق الذي سمي لاحقاً باسمه (جبل طارق)، وهزم القوط الغربيين في معركة وادي لكة.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">740-743 م</span>ثورة الأمازيغ (ثورة البربر)</h4>
+                            <p>ثار الأمازيغ ضد الحكم الأموي بسبب سياسات التمييز، مما أدى إلى استقلال المغرب عن الخلافة الأموية ونشوء دويلات مستقلة فيه.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">788 م</span>تأسيس دولة الأدارسة</h4>
+                            <p>فر إدريس الأول (حفيد الحسن بن علي) إلى المغرب هرباً من العباسيين، وتمكن من تأسيس أول دولة إسلامية مستقلة في المغرب الأقصى، واتخذ من وليلي عاصمة له، قبل أن يؤسس ابنه إدريس الثاني مدينة فاس عام 808م.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">974 م</span>سقوط الأدارسة</h4>
+                            <p>انتهى حكم الأدارسة بعد غزو الفاطميين للمغرب، وبدأت مرحلة من الانقسامات السياسية في المنطقة.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- المرابطون والموحدون -->
+            <section class="timeline-item mb-20">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-3xl font-bold mb-6 section-title">عصر المرابطين والموحدين (1060-1269)</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <p class="mb-4">شهد المغرب في هذه الفترة قيام دولتين كبيرتين هما: المرابطون (1060-1147م) والموحدون (1121-1269م). تأسست دولة المرابطين على يد عبد الله بن ياسين وقائده العسكري يوسف بن تاشفين، الذي تمكن من توحيد المغرب الأقصى ومد نفوذه إلى الأندلس. أسس المرابطون مدينة مراكش كعاصمة لدولتهم عام 1062م.</p>
+                            <p>ظهرت بعدها دولة الموحدين التي أسسها محمد بن تومرت وخليفته عبد المؤمن بن علي الكومي. تمكن الموحدون من بناء إمبراطورية واسعة امتدت من المغرب الأقصى إلى تونس شرقاً والأندلس شمالاً. شهدت هذه الفترة ازدهاراً علمياً وثقافياً كبيراً، وتم تشييد العديد من المعالم المعمارية البارزة مثل صومعة الكتبية في مراكش وصومعة حسان في الرباط.</p>
+                        </div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Mosqu%C3%A9e_de_la_Koutoubia_-_marakesh.jpg/800px-Mosqu%C3%A9e_de_la_Koutoubia_-_marakesh.jpg" alt="جامع الكتبية في مراكش" class="w-full h-auto rounded-lg mb-2">
+                            <p class="image-caption rounded-b-lg">جامع الكتبية في مراكش، أحد أبرز المعالم من العصر الموحدي</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-8 mb-4">أهم الأحداث:</h3>
+                    <div class="space-y-4">
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1062 م</span>تأسيس مدينة مراكش</h4>
+                            <p>أسس يوسف بن تاشفين مدينة مراكش واتخذها عاصمة لدولة المرابطين، وهي المدينة التي أعطت المغرب اسمه في اللغات الأوروبية.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1086 م</span>معركة الزلاقة</h4>
+                            <p>عبر يوسف بن تاشفين إلى الأندلس وانتصر على القوات القشتالية بقيادة ألفونسو السادس في معركة الزلاقة، مما أدى إلى إطالة عمر الحكم الإسلامي في الأندلس.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1121 م</span>ظهور الدعوة الموحدية</h4>
+                            <p>بدأ محمد بن تومرت دعوته الإصلاحية في جبال الأطلس، مؤسساً حركة الموحدين التي ستتحول لاحقاً إلى دولة قوية.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1147 م</span>سقوط دولة المرابطين</h4>
+                            <p>استولى الموحدون بقيادة عبد المؤمن بن علي على مراكش، مما أدى إلى نهاية دولة المرابطين وبداية الحكم الموحدي في المغرب.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1195 م</span>معركة الأرك</h4>
+                            <p>انتصر الموحدون بقيادة يعقوب المنصور على قوات قشتالة في معركة الأرك، وهي من أبرز الانتصارات الإسلامية في الأندلس.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1212 م</span>معركة العقاب</h4>
+                            <p>تعرضت قوات الموحدين لهزيمة ساحقة أمام تحالف الممالك المسيحية في معركة العقاب، مما مهد لبداية انهيار دولة الموحدين وتراجع النفوذ الإسلامي في الأندلس.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1269 م</span>سقوط دولة الموحدين</h4>
+                            <p>انتهى حكم الموحدين وبدأت دولة بني مرين في السيطرة على المغرب الأقصى، مؤسسين عاصمتهم في فاس.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- المرينيون والوطاسيون والسعديون -->
+            <section class="timeline-item mb-20">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-3xl font-bold mb-6 section-title">عصر المرينيين والوطاسيين والسعديين (1269-1659)</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <p class="mb-4">بعد سقوط الموحدين، حكمت المغرب عدة سلالات أبرزها: المرينيون (1269-1465م)، الوطاسيون (1472-1554م)، والسعديون (1554-1659م). تميز عهد المرينيين بالاهتمام بالعلم والثقافة، حيث أنشأوا المدارس والجامعات وشيدوا المباني الجميلة في فاس وغيرها من المدن. كما حاولوا استعادة الأندلس لكنهم فشلوا في ذلك.</p>
+                            <p>جاء بعدهم الوطاسيون الذين واجهوا تحديات كبيرة من البرتغاليين والإسبان الذين احتلوا مناطق ساحلية من المغرب. ثم ظهرت الدولة السعدية التي تمكنت من توحيد البلاد وطرد البرتغاليين والإسبان من معظم الأراضي المغربية. من أبرز أحداث هذه الفترة معركة وادي المخازن (1578م) التي انتصر فيها المغاربة بقيادة السلطان عبد الملك السعدي على البرتغاليين وقتل فيها ملك البرتغال.</p>
+                        </div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Citywall_fas.jpg" alt="تحصينات فاس" class="w-full h-auto rounded-lg mb-2">
+                            <p class="image-caption rounded-b-lg">تحصينات مدينة فاس التي شيدها المرينيون</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-8 mb-4">أهم الأحداث:</h3>
+                    <div class="space-y-4">
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1269 م</span>بداية حكم المرينيين</h4>
+                            <p>استولى المرينيون على مراكش وبدأوا في توحيد المغرب تحت حكمهم، متخذين من فاس عاصمة لدولتهم.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1276 م</span>تأسيس فاس الجديدة</h4>
+                            <p>أسس السلطان المريني أبو يوسف يعقوب مدينة فاس الجديدة (فاس الجديد) كامتداد لمدينة فاس القديمة، وأصبحت مركزاً إدارياً وعسكرياً للدولة المرينية.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1415 م</span>احتلال سبتة</h4>
+                            <p>استولى البرتغاليون على مدينة سبتة المغربية، مما مثل بداية التوسع الاستعماري الأوروبي في المغرب.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1465 م</span>سقوط الدولة المرينية</h4>
+                            <p>انتهى حكم المرينيين بعد ثورة شعبية في فاس، وبدأت فترة من الفوضى قبل تولي الوطاسيين للحكم.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1554 م</span>بداية الدولة السعدية</h4>
+                            <p>تمكن السعديون من إنهاء حكم الوطاسيين والسيطرة على المغرب، مؤسسين دولة قوية تبنت المذهب السني وناهضت الوجود البرتغالي والإسباني في البلاد.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1578 م</span>معركة وادي المخازن</h4>
+                            <p>انتصر المغاربة بقيادة السلطان عبد الملك السعدي على البرتغاليين في معركة وادي المخازن (معركة الملوك الثلاثة)، حيث قتل فيها ثلاثة ملوك، وكانت نقطة تحول في تاريخ المغرب والعلاقات مع أوروبا.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1591 م</span>الحملة المغربية على السودان</h4>
+                            <p>أرسل السلطان أحمد المنصور الذهبي جيشاً بقيادة جودر باشا لفتح إمبراطورية سنغاي في غرب أفريقيا (مالي والنيجر حالياً)، مما أدى إلى سيطرة المغرب على تجارة الذهب والملح عبر الصحراء.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1659 م</span>نهاية الدولة السعدية</h4>
+                            <p>انتهت الدولة السعدية بموت آخر سلاطينها، وبدأت فترة اضطرابات استمرت حتى ظهور الدولة العلوية.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- الدولة العلوية -->
+            <section class="timeline-item mb-20">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-3xl font-bold mb-6 section-title">الدولة العلوية (1660-1912)</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <p class="mb-4">تأسست الدولة العلوية سنة 1660م على يد المولى الشريف بن علي، وهي لا تزال الأسرة الحاكمة في المغرب إلى اليوم. وقد وحد المولى الرشيد المغرب بعد فترة من الانقسام، ولكن كان السلطان مولاي إسماعيل (1672-1727) هو المؤسس الحقيقي للدولة العلوية، حيث مد نفوذها إلى كامل المغرب وأسس جيشاً قوياً وأقام نظاماً إدارياً فعالاً.</p>
+                            <p>خلال القرنين الثامن عشر والتاسع عشر، واجهت الدولة العلوية تحديات داخلية وخارجية، خاصة مع تزايد التنافس الاستعماري الأوروبي على المغرب. وقد تعرض المغرب للهزيمة أمام فرنسا في معركة إيسلي (1844م)، ثم أمام إسبانيا في حرب تطوان (1860م)، مما أدى إلى تنازلات اقتصادية وسياسية. ورغم محاولات الإصلاح التي قام بها السلاطين العلويون، فقد انتهى الأمر بفرض الحماية الفرنسية والإسبانية على المغرب عام 1912م.</p>
+                        </div>
+                        <div>
+                            <img src="https://www.noonpost.com/wp-content/uploads/2018/03/fez-morocco-222.jpg" alt="مدينة فاس" class="w-full h-auto rounded-lg mb-2">
+                            <p class="image-caption rounded-b-lg">مدينة فاس، إحدى العواصم التاريخية للدولة العلوية</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-8 mb-4">أهم الأحداث:</h3>
+                    <div class="space-y-4">
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1660 م</span>تأسيس الدولة العلوية</h4>
+                            <p>بدأت الدولة العلوية في تافيلالت على يد المولى الشريف بن علي، وهو من سلالة الحسن بن علي بن أبي طالب.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1664-1672 م</span>توحيد المغرب</h4>
+                            <p>تمكن المولى الرشيد من توحيد المغرب تحت سلطة الدولة العلوية، وأنهى الانقسامات الداخلية التي كانت سائدة بعد سقوط السعديين.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1672-1727 م</span>حكم السلطان مولاي إسماعيل</h4>
+                            <p>يعتبر مولاي إسماعيل من أبرز سلاطين الدولة العلوية، حيث مد سلطته على كامل المغرب، وتمكن من استعادة طنجة من البريطانيين والعرائش من الإسبان، وأسس جيش العبيد البخاري، واتخذ مكناس عاصمة للدولة.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1757-1790 م</span>حكم السلطان محمد بن عبد الله</h4>
+                            <p>استعاد السلطان محمد بن عبد الله استقرار المغرب بعد فترة اضطرابات، وقام بإصلاحات إدارية واقتصادية، وأقام علاقات دبلوماسية مع العديد من الدول الأوروبية، وكان المغرب من أوائل الدول التي اعترفت باستقلال الولايات المتحدة الأمريكية عام 1777م.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1844 م</span>معركة إيسلي</h4>
+                            <p>تعرض المغرب للهزيمة أمام فرنسا في معركة إيسلي، مما أدى إلى توقيع معاهدة وجدة التي كرست النفوذ الفرنسي في شرق المغرب.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1860 م</span>حرب تطوان</h4>
+                            <p>انهزم المغرب أمام إسبانيا في حرب تطوان، مما أدى إلى توسيع مناطق النفوذ الإسباني وفرض غرامة مالية كبيرة على المغرب.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1873-1894 م</span>حكم السلطان الحسن الأول</h4>
+                            <p>حاول السلطان الحسن الأول تحديث المغرب وتقوية جيشه لمواجهة الأطماع الاستعمارية، لكن الضغوط الداخلية والخارجية حالت دون نجاح إصلاحاته بشكل كامل.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1906 م</span>مؤتمر الجزيرة الخضراء</h4>
+                            <p>عقد مؤتمر الجزيرة الخضراء (الخسيرس) في إسبانيا لحل الأزمة المغربية، وفيه تقرر احترام استقلال المغرب شكلياً مع منح فرنسا وإسبانيا امتيازات واسعة.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1912 م</span>فرض الحماية على المغرب</h4>
+                            <p>أجبر السلطان مولاي عبد الحفيظ على توقيع معاهدة فاس التي فرضت الحماية الفرنسية على المغرب، بينما حصلت إسبانيا على مناطق نفوذ في الشمال والجنوب.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- عهد الحماية والاستقلال -->
+            <section class="timeline-item mb-20">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-3xl font-bold mb-6 section-title">عهد الحماية والاستقلال (1912-1956)</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <p class="mb-4">خضع المغرب للحماية الفرنسية والإسبانية من 1912 إلى 1956م. فرضت فرنسا سيطرتها على معظم الأراضي المغربية، بينما سيطرت إسبانيا على مناطق الشمال والجنوب. وكانت مدينة طنجة منطقة دولية خاضعة لإدارة عدة دول أوروبية.</p>
+                            <p>منذ البداية، واجه المغاربة الاستعمار بالمقاومة المسلحة، خاصة في جبال الريف بقيادة محمد بن عبد الكريم الخطابي، وفي الأطلس المتوسط والكبير. وبعد الحرب العالمية الثانية، تحول النضال إلى المجال السياسي، حيث تشكلت أحزاب وطنية مثل حزب الاستقلال طالبت بإنهاء الحماية. وبعد نفي السلطان محمد الخامس عام 1953م إلى مدغشقر، اندلعت ثورة الملك والشعب التي أدت في النهاية إلى عودة السلطان واستقلال المغرب عام 1956م.</p>
+                        </div>
+                        <div>
+                            <img src="https://www.marrakechplus.ma/wp-content/uploads/2024/06/koutoubia1-800x528-1.jpeg" alt="الملك محمد الخامس" class="w-full h-auto rounded-lg mb-2">
+                            <p class="image-caption rounded-b-lg">جامع الكتبية في مراكش، رمز للعمارة المغربية التقليدية</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-8 mb-4">أهم الأحداث:</h3>
+                    <div class="space-y-4">
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1912 م</span>توقيع معاهدة فاس</h4>
+                            <p>وقع السلطان مولاي عبد الحفيظ على معاهدة فاس التي فرضت الحماية الفرنسية على المغرب، تلتها اتفاقية مع إسبانيا حددت مناطق النفوذ الإسباني.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1921-1926 م</span>حرب الريف</h4>
+                            <p>قاد محمد بن عبد الكريم الخطابي ثورة ضد الاستعمار الإسباني ثم الفرنسي في منطقة الريف، وأسس جمهورية الريف التي استمرت خمس سنوات قبل أن يتم إخمادها.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1930 م</span>الظهير البربري</h4>
+                            <p>أصدرت السلطات الاستعمارية الفرنسية "الظهير البربري" الذي حاول فصل القضاء العرفي الأمازيغي عن الشريعة الإسلامية، مما أثار احتجاجات شعبية واسعة وعزز الحركة الوطنية المغربية.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1944 م</span>وثيقة المطالبة بالاستقلال</h4>
+                            <p>قدمت الحركة الوطنية المغربية وثيقة المطالبة بالاستقلال، وهي أول وثيقة رسمية تطالب باستقلال المغرب عن فرنسا وإسبانيا.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1953 م</span>نفي السلطان محمد الخامس</h4>
+                            <p>نفت السلطات الفرنسية السلطان محمد الخامس وعائلته إلى كورسيكا ثم إلى مدغشقر، بسبب دعمه للحركة الوطنية، وعينت محمد بن عرفة بدلاً منه.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1953-1955 م</span>ثورة الملك والشعب</h4>
+                            <p>اندلعت مقاومة شعبية واسعة ضد الاستعمار الفرنسي وتنصيب بن عرفة، عرفت باسم "ثورة الملك والشعب"، مما أجبر فرنسا على إعادة محمد الخامس للعرش.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1955 م</span>مؤتمر إيكس ليبان</h4>
+                            <p>عقد مؤتمر في إيكس ليبان بفرنسا لبحث مستقبل المغرب، وفيه تم الاتفاق على عودة السلطان محمد الخامس والتمهيد لاستقلال المغرب.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1956 م</span>استقلال المغرب</h4>
+                            <p>حصل المغرب على استقلاله من فرنسا في 2 مارس 1956م، ومن إسبانيا في 7 أبريل من نفس العام، وأصبح السلطان محمد الخامس ملكاً على البلاد.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- المغرب المستقل -->
+            <section class="timeline-item mb-20">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-3xl font-bold mb-6 section-title">المغرب المستقل (1956-2025)</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <p class="mb-4">بعد الاستقلال، بدأ المغرب بناء مؤسساته الوطنية وتعزيز سيادته تحت قيادة الملك محمد الخامس (1956-1961)، ثم خلفه ابنه الحسن الثاني (1961-1999) الذي حكم البلاد لمدة 38 عاماً. اتسمت فترة الحسن الثاني بتعزيز المؤسسات السياسية من خلال دساتير متعاقبة، وبتحديات أمنية وسياسية داخلية وخارجية، أبرزها قضية الصحراء المغربية.</p>
+                            <p>في عام 1975م، نظم المغرب المسيرة الخضراء لاسترجاع الأقاليم الجنوبية (الصحراء) من الاستعمار الإسباني. وفي عهد الملك محمد السادس الذي تولى الحكم عام 1999م، شهد المغرب تحولات سياسية واقتصادية واجتماعية كبيرة، من خلال إطلاق مشاريع تنموية ضخمة وإصلاحات سياسية توجت بدستور 2011م، كما عزز المغرب علاقاته الدولية وخاصة مع أفريقيا وعمل على توسيع الاعتراف الدولي بمغربية الصحراء.</p>
+                        </div>
+                        <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/King_Mohammed_VI_%28cropped%29.jpg" alt="الملك محمد السادس" class="w-full h-auto rounded-lg mb-2">
+                            <p class="image-caption rounded-b-lg">جلالة الملك محمد السادس، ملك المملكة المغربية الحالي</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-8 mb-4">أهم الأحداث:</h3>
+                    <div class="space-y-4">
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1957 م</span>تحول المغرب إلى مملكة</h4>
+                            <p>أصبح المغرب مملكة دستورية وتغير لقب السلطان محمد الخامس إلى ملك المغرب.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1961 م</span>وفاة الملك محمد الخامس</h4>
+                            <p>توفي الملك محمد الخامس وتولى ابنه الحسن الثاني عرش المملكة المغربية.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1963 م</span>حرب الرمال</h4>
+                            <p>اندلعت حرب حدودية بين المغرب والجزائر حول منطقة فكيك، عرفت باسم "حرب الرمال".</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1975 م</span>المسيرة الخضراء</h4>
+                            <p>نظم المغرب المسيرة الخضراء التي شارك فيها 350 ألف مواطن مغربي لاسترجاع الصحراء من الاستعمار الإسباني، وتم توقيع اتفاقية مدريد التي قسمت الصحراء بين المغرب وموريتانيا (التي انسحبت لاحقاً).</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1979 م</span>انسحاب موريتانيا من الصحراء</h4>
+                            <p>انسحبت موريتانيا من الجزء الجنوبي من الصحراء، فضمه المغرب إلى أراضيه.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1991 م</span>وقف إطلاق النار</h4>
+                            <p>تم التوصل إلى اتفاق لوقف إطلاق النار بين المغرب وجبهة البوليساريو تحت إشراف الأمم المتحدة، وإنشاء بعثة المينورسو.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">1999 م</span>وفاة الملك الحسن الثاني</h4>
+                            <p>توفي الملك الحسن الثاني وتولى ابنه محمد السادس عرش المملكة المغربية.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">2004 م</span>إنشاء هيئة الإنصاف والمصالحة</h4>
+                            <p>أنشأ المغرب هيئة الإنصاف والمصالحة لتسوية ملف انتهاكات حقوق الإنسان التي وقعت في الماضي.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">2011 م</span>دستور جديد</h4>
+                            <p>أقر المغرب دستوراً جديداً عزز الحريات وحقوق الإنسان ووسع صلاحيات الحكومة، وذلك في أعقاب احتجاجات حركة 20 فبراير.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">2017 م</span>عودة المغرب للاتحاد الأفريقي</h4>
+                            <p>عاد المغرب إلى الاتحاد الأفريقي بعد غياب دام 33 عاماً، في خطوة مهمة لتعزيز دوره القاري.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">2020 م</span>تطبيع العلاقات مع إسرائيل</h4>
+                            <p>أعلن المغرب عن تطبيع علاقاته مع إسرائيل، مقابل اعتراف الولايات المتحدة بسيادة المغرب على الصحراء.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">2021 م</span>توسيع الاعتراف بمغربية الصحراء</h4>
+                            <p>افتتحت العديد من الدول قنصليات لها في مدن الصحراء المغربية، في اعتراف ضمني بسيادة المغرب على المنطقة.</p>
+                        </div>
+                        <div class="event-card rounded-lg">
+                            <h4 class="font-bold"><span class="year-badge">2022-2025 م</span>تعزيز المكانة الدولية</h4>
+                            <p>واصل المغرب تعزيز مكانته الإقليمية والدولية، وإطلاق مشاريع تنموية كبرى، وتطوير بنيته التحتية، وإصلاح منظومة الحماية الاجتماعية، وتنويع شراكاته الاقتصادية والاستراتيجية.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- خاتمة -->
+        <section class="mb-16">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold mb-6 section-title">المغرب اليوم - حضارة عريقة ومستقبل واعد</h2>
+                <p class="mb-4">يمثل المغرب اليوم نموذجاً فريداً في المنطقة، حيث يجمع بين الأصالة والمعاصرة، ويتميز بتنوعه الثقافي والجغرافي، واستقراره السياسي. ويسعى المغرب، تحت قيادة الملك محمد السادس، إلى تحقيق التنمية المستدامة وتعزيز مكانته الإقليمية والدولية والدفاع عن قضاياه الوطنية.</p>
+                <p class="mb-4">عبر تاريخه الطويل، مر المغرب بمراحل متنوعة من الصعود والتراجع، لكنه استطاع دائماً الحفاظ على هويته الوطنية وخصوصيته الثقافية. ويستمر المغرب اليوم في كتابة فصول جديدة من تاريخه، منطلقاً من إرثه الحضاري العريق نحو آفاق المستقبل.</p>
+                <p>إن دراسة تاريخ المغرب تكشف عن صمود وعزيمة شعب عريق، وعن قدرة بلد على تجاوز التحديات والصعاب، والانخراط في مسار التنمية والتحديث، مع الحفاظ على القيم والمبادئ الأصيلة. وهذا ما يجعل المغرب نموذجاً فريداً يستحق الدراسة والتقدير.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-8 px-4 rounded-lg mb-8">
+            <div class="container mx-auto text-center">
+                <h3 class="text-xl font-bold mb-4">تاريخ المغرب عبر العصور</h3>
+<p>تم إعداد هذا الموقع يكون مرجعاً تاريخياً شاملاً لأهم الأحداث في تاريخ المملكة المغربية، من قبل عزيز السعدي</p>
+                <p class="mt-4">جميع الحقوق محفوظة &copy; 2025</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // تحريك سلس عند النقر على الروابط الداخلية
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.event-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-5px)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>بوابة الثقافة</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Cairo", sans-serif;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: radial-gradient(circle, #3a3b3c, #000);
+        color: white;
+        transition: background-color 1s ease-in-out;
+        animation: coolBackground 15s infinite alternate;
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: #ffffff;
+        margin-bottom: 40px;
+        z-index: 2;
+        text-shadow: 0 0 12px #fff, 0 0 25px #fff;
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 2;
+      }
+
+      .btn {
+        background-color: #6c5ce7;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #4834d4;
+        transform: scale(1.05);
+      }
+
+      .btn:active {
+        transform: scale(0.98);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      /* الاسم الثابت في الأسفل */
+      .fixed-name {
+        position: absolute;
+        bottom: 15px;
+        font-size: 1.3rem;
+        color: #ffffff;
+        z-index: 2;
+        text-shadow: 0 0 12px #fff;
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 8px #fff;
+        }
+        to {
+          text-shadow: 0 0 25px #fff, 0 0 30px #fff;
+        }
+      }
+
+      /* الاسم العشوائي المتحرك */
+      .floating-text {
+        position: absolute;
+        color: #ffffff66;
+        font-size: 18px;
+        white-space: nowrap;
+        pointer-events: none;
+        text-shadow: 0 0 6px #ffffff88;
+        z-index: 0;
+      }
+
+      /* الاسم يتبع الماوس مع تأثير انفجار */
+      .follow-mouse {
+        position: fixed;
+        pointer-events: none;
+        font-size: 18px;
+        color: #ffffff;
+        text-shadow: 0 0 15px #fff, 0 0 30px #ff8c00;
+        z-index: 0;
+        transform: translate(-50%, -50%);
+        transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+      }
+
+      .follow-mouse:hover {
+        color: #ff8c00;
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+
+      /* تأثير الإنفجار */
+      @keyframes explode {
+        0% {
+          transform: translate(-50%, -50%) scale(1);
+          font-size: 18px;
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(2);
+          font-size: 30px;
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+          font-size: 18px;
+        }
+      }
+
+      /* تأثير الخلفية */
+      @keyframes coolBackground {
+        0% {
+          background: radial-gradient(circle, #3a3b3c, #000);
+        }
+        33% {
+          background: radial-gradient(circle, #5c6bc0, #000);
+        }
+        66% {
+          background: radial-gradient(circle, #e57373, #000);
+        }
+        100% {
+          background: radial-gradient(circle, #81c784, #000);
+        }
+      }
+
+      /* نصوص تطير عشوائياً من الأعلى أو الأسفل */
+      .floating-text {
+        position: absolute;
+        color: #ffffff66;
+        font-size: 18px;
+        white-space: nowrap;
+        pointer-events: none;
+        text-shadow: 0 0 6px #ffffff88;
+        z-index: 0;
+      }
+
+      /* حركة النص العشوائي */
+      @keyframes floatUp {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-100vh);
+        }
+      }
+
+      @keyframes floatDown {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(100vh);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>بوابة الثقافة</h1>
+
+    <div class="button-container">
+      <button class="btn" onclick="goTo('تاريخ-المغرب.html')">تاريخ المغرب</button>
+      <button class="btn" onclick="goTo('جغرافية-المغرب.html')">جغرافية المغرب</button>
+    </div>
+
+    <!-- النص الثابت أسفل الصفحة -->
+    <div class="fixed-name">تم تصميم هذا الموقع من طرف <strong>عزيز السعدي</strong></div>
+
+    <script>
+      function goTo(page) {
+        window.location.href = page;
+      }
+
+      // النص الذي يتبع الماوس
+      document.addEventListener("mousemove", function (e) {
+        const follower = document.getElementById("followMouse");
+        follower.style.left = e.pageX + "px";
+        follower.style.top = e.pageY + "px";
+
+        // إضافة تأثير الإنفجار عندما يقترب الماوس
+        follower.style.animation = "explode 0.5s ease";
+      });
+
+      // إزالة تأثير الإنفجار بعد مدة قصيرة
+      document.addEventListener("animationend", function () {
+        const follower = document.getElementById("followMouse");
+        follower.style.animation = "";
+      });
+
+      // نصوص تطير عشوائياً من الأعلى أو الأسفل
+      for (let i = 0; i < 30; i++) {
+        const span = document.createElement("span");
+        span.classList.add("floating-text");
+        span.innerText = "عزيز السعدي";
+
+        span.style.left = Math.random() * 100 + "vw";
+        span.style.fontSize = 12 + Math.random() * 12 + "px";
+        span.style.opacity = (0.03 + Math.random() * 0.1).toFixed(2);
+        span.style.animationDuration = 10 + Math.random() * 20 + "s";
+
+        // تحديد اتجاه الحركة (أعلى أو أسفل)
+        const direction = Math.random() > 0.5 ? "floatUp" : "floatDown";
+        span.style.animationName = direction;
+        span.style.animationTimingFunction = "linear";
+        span.style.animationIterationCount = "infinite";
+
+        document.body.appendChild(span);
+      }
+    </script>
+  </body>
+</html>

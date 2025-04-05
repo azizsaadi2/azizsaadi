@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المغرب: معلومات وإحصائيات</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .section-title {
+            border-bottom: 2px solid #2b6cb0;
+        }
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .editable {
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .editable:hover {
+            background-color: #f0f4f8;
+        }
+        .editable[contenteditable="true"] {
+            border: 2px solid #4299e1;
+            background-color: #ebf8ff;
+            padding: 5px;
+        }
+        /* Make sidebar sticky */
+        .sticky-sidebar {
+            position: sticky;
+            top: 20px;
+        }
+        [contenteditable]:focus {
+            outline: none;
+        }
+        /* Print-friendly styles */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            .page-container {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: white;
+            }
+            .print-break-avoid {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8 bg-white shadow-lg">
+        <!-- Header -->
+        <header class="mb-10 text-center">
+            <div class="flex justify-center mb-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg" alt="علم المغرب" class="w-32 h-auto">
+            </div>
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">المملكة المغربية</h1>
+            <h2 class="text-2xl text-gray-600 mb-6">معلومات وإحصائيات شاملة</h2>
+            <p class="text-gray-500 mb-8">آخر تحديث: مايو 2025</p>
+            
+            <!-- Edit mode toggle -->
+            <div class="mb-6 no-print">
+                
+            </div>
+        </header>
+
+        <div class="flex flex-col lg:flex-row">
+            <!-- Sidebar navigation -->
+            <div class="lg:w-1/4 mb-8 lg:mb-0 lg:pr-8 no-print">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md sticky-sidebar">
+                    <h3 class="text-xl font-bold mb-4 text-gray-700">جدول المحتويات</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#general-info" class="text-blue-600 hover:text-blue-800 block py-1">معلومات عامة</a></li>
+                        <li><a href="#geography" class="text-blue-600 hover:text-blue-800 block py-1">الجغرافيا والتضاريس</a></li>
+                        <li><a href="#regions-cities" class="text-blue-600 hover:text-blue-800 block py-1">الجهات والمدن</a></li>
+                        <li><a href="#infrastructure" class="text-blue-600 hover:text-blue-800 block py-1">البنية التحتية</a></li>
+                        <li><a href="#natural-resources" class="text-blue-600 hover:text-blue-800 block py-1">الموارد الطبيعية</a></li>
+                        <li><a href="#culture-sports" class="text-blue-600 hover:text-blue-800 block py-1">الثقافة والرياضة</a></li>
+                        <li><a href="#historic-places" class="text-blue-600 hover:text-blue-800 block py-1">أماكن تاريخية وسياحية</a></li>
+                        <li><a href="#global-rankings" class="text-blue-600 hover:text-blue-800 block py-1">التصنيفات الدولية</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="lg:w-3/4">
+                <!-- Section 1: General Information -->
+                <section id="general-info" class="mb-12 print-break-avoid">
+                    <h2 class="text-2xl font-bold mb-6 text-blue-800 section-title pb-2">معلومات عامة</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">عدد السكان</h3>
+                            <p class="text-3xl font-bold text-blue-600 mb-2 editable" data-field="population">36,828,330 نسمة</p>
+                            <p class="text-sm text-gray-500 editable" data-field="population-note">وفقًا لآخر إحصاء رسمي في عام 2024</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">المساحة الإجمالية</h3>
+                            <p class="text-3xl font-bold text-blue-600 mb-2 editable" data-field="area">710,850 كم²</p>
+                            <p class="text-sm text-gray-500 editable" data-field="area-note">متضمنة الصحراء الغربية</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">طول السواحل البحرية</h3>
+                        <p class="mb-4 editable" data-field="coastline">يتمتع المغرب بتوفره على واجهتين بحريتين ممتدتين على طول 3,500 كم، منها أزيد من 500 كم على البحر الأبيض المتوسط وما يقل بقليل عن 3,000 كم على المحيط الأطلسي.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">مساحة الغابات</h3>
+                        <p class="mb-4 editable" data-field="forest-area">تبلغ نسبة الغطاء الغابوي في المغرب حوالي 12.9% من مساحة الأراضي (حسب بيانات 2022)، وتصل مساحة الغطاء الغابوي الطبيعي بالمغرب إلى حوالي 9 مليون هكتار.</p>
+                    </div>
+                </section>
+
+                <!-- Section 2: Geography and Terrain -->
+                <section id="geography" class="mb-12 print-break-avoid">
+                    <h2 class="text-2xl font-bold mb-6 text-blue-800 section-title pb-2">الجغرافيا والتضاريس</h2>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أعلى قمة جبلية</h3>
+                        <p class="mb-4 editable" data-field="highest-peak">جبل توبقال هو أعلى قمة جبلية في المغرب وشمال أفريقيا والوطن العربي وسابع أعلى قمة في أفريقيا بارتفاع يبلغ 4,167 مترًا (13,671 قدمًا). ينتمي جبل توبقال إلى سلسلة جبال الأطلس الكبير.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أطول نهر في المغرب</h3>
+                        <p class="mb-4 editable" data-field="longest-river">يُعد نهر درعة أطول أنهار المغرب، حيث يبلغ طوله الإجمالي 1,100 كم، ويُسمّى أيضاً نهر وادي درعة. ينبع من جبال الأطلس الكبير بالمغرب في اتجاه الجنوب الشرقي حيث يلتقي وادي دادس ونهر إميني.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أكبر بحيرة في المغرب</h3>
+                        <p class="mb-4 editable" data-field="largest-lake">تُعد بحيرة إيريكي من أكبر البحيرات في المغرب بمساحة تبلغ حوالي 105.31 كم². وتعتبر بحيرة أكلمام سيدي علي الواقعة في إقليم ميدلت من أكبر البحيرات الجبلية في المغرب بمساحة 330 هكتار.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أبرز الشلالات</h3>
+                        <p class="mb-4 editable" data-field="waterfalls">من أشهر الشلالات في المغرب: شلالات أوزود في جبال الأطلس الكبير، وشلال زاوية إفران، وشلال عيون أم الربيع، وشلال مومزاز. تعتبر شلالات أوزود من أكبر وأجمل الشلالات في المغرب بارتفاع 110 متر.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أكبر غابة في المغرب</h3>
+                        <p class="mb-4 editable" data-field="largest-forest">تعد غابة المعمورة أكبر غابة في المغرب حيث تبلغ مساحتها 1,320 كيلومترًا مربعًا، وهي واحدة من أكبر الغابات الحرجيّة في العالم. كما تعتبر أكبر غابة للبلوط الفليني في العالم بمساحة 130,000 هكتار، وتقع على ساحل المحيط الأطلسي بين مدينتي الرباط والقنيطرة.</p>
+                    </div>
+                </section>
+
+                <!-- Section 3: Regions and Cities -->
+                <section id="regions-cities" class="mb-12 print-break-avoid">
+                    <h2 class="text-2xl font-bold mb-6 text-blue-800 section-title pb-2">الجهات والمدن</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أكبر جهة من حيث المساحة</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="largest-region">جهة العيون الساقية الحمراء</p>
+                            <p class="text-sm text-gray-500 editable" data-field="largest-region-area">140,018 كم²</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أصغر جهة من حيث المساحة</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="smallest-region">جهة طنجة تطوان الحسيمة</p>
+                            <p class="text-sm text-gray-500 editable" data-field="smallest-region-area">حوالي 17,000 كم²</p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أكبر جهة من حيث السكان</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="most-populated-region">جهة الدار البيضاء سطات</p>
+                            <p class="text-sm text-gray-500 editable" data-field="most-populated-region-population">حوالي 7,688,967 نسمة</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أقل جهة من حيث السكان</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="least-populated-region">جهة الداخلة وادي الذهب</p>
+                            <p class="text-sm text-gray-500 editable" data-field="least-populated-region-population">أقل من 200,000 نسمة</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أكبر المدن من حيث عدد السكان</h3>
+                        <ol class="list-decimal pr-5 space-y-2 editable" data-field="largest-cities">
+                            <li>الدار البيضاء - أكبر مدينة في المغرب (حوالي 3.36 مليون نسمة)</li>
+                            <li>فاس - ثاني أكبر مدينة مغربية (حوالي 1.22 مليون نسمة)</li>
+                            <li>طنجة - (حوالي 1.27 مليون نسمة)</li>
+                            <li>مراكش - (حوالي 928 ألف نسمة)</li>
+                            <li>سلا - (حوالي 890 ألف نسمة)</li>
+                        </ol>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أكبر مدينة من حيث المساحة</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="largest-city-area">فم الحصن (إقليم طاطا)</p>
+                            <p class="text-sm text-gray-500 editable" data-field="largest-city-area-size">حوالي 2,759.46 كم²</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أصغر مدينة من حيث المساحة</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="smallest-city-area">مولاي إدريس زرهون</p>
+                            <p class="text-sm text-gray-500 editable" data-field="smallest-city-area-size">مساحة صغيرة جداً تقع في شمال البلاد بالقرب من مكناس</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أقدم مدينة في المغرب</h3>
+                        <p class="mb-4 editable" data-field="oldest-city">تعتبر مدينة فاس من أقدم المدن المغربية، تأسست في عام 789 ميلادية على يد إدريس الأول، وتعتبر من أهم المراكز الثقافية والتاريخية في المغرب. كما تعتبر تازة من أقدم المدن المغربية أيضاً.</p>
+                    </div>
+                </section>
+
+                <!-- Section 4: Infrastructure -->
+                <section id="infrastructure" class="mb-12 print-break-avoid">
+                    <h2 class="text-2xl font-bold mb-6 text-blue-800 section-title pb-2">البنية التحتية</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أكبر سد في المغرب</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="largest-dam">سد الوحدة</p>
+                            <p class="text-sm text-gray-500 editable" data-field="largest-dam-info">يعتبر أكبر سد بالمغرب وأحد أكبر سدود إفريقيا بحقينة تتجاوز 3,500 مليون متر مكعب</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أكبر ميناء في المغرب</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="largest-port">ميناء طنجة المتوسط</p>
+                            <p class="text-sm text-gray-500 editable" data-field="largest-port-info">أكبر ميناء في البحر المتوسط وفي أفريقيا، يعالج أكثر من 10 ملايين حاوية سنوياً</p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أطول قنطرة في المغرب</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="longest-bridge">جسر محمد السادس</p>
+                            <p class="text-sm text-gray-500 editable" data-field="longest-bridge-info">يعتبر من أطول الجسور المعلقة في أفريقيا، يبلغ طوله 742 متراً، ويربط بين الرباط وسلا</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أكبر مطار في المغرب</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="largest-airport">مطار محمد الخامس الدولي (الدار البيضاء)</p>
+                            <p class="text-sm text-gray-500 editable" data-field="largest-airport-info">أكبر مطار في المغرب من حيث حركة المسافرين وعدد الرحلات الدولية</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">عدد المطارات في المغرب</h3>
+                        <p class="mb-4 editable" data-field="airports-number">يبلغ عدد المطارات في المغرب حوالي 38 مطاراً، منها مطارات دولية رئيسية مثل مطار محمد الخامس بالدار البيضاء، مطار مراكش المنارة، مطار أكادير المسيرة، مطار طنجة ابن بطوطة، مطار الرباط سلا، ومطار فاس سايس.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أكبر مشروع للطاقة الشمسية في المغرب</h3>
+                        <p class="mb-4 editable" data-field="solar-project">يعتبر مشروع نور ميدلت أكبر مشروع للطاقة الشمسية في المغرب، بطاقة إجمالية تبلغ 1,600 ميغاواط عند اكتماله، واستثمارات تقدر بنحو 20 مليار درهم (2 مليار دولار). كما يعد مجمع ورزازات للطاقة الشمسية (نور) من أكبر مشاريع الطاقة الشمسية المركّزة في العالم.</p>
+                    </div>
+                </section>
+
+                <!-- Section 5: Natural Resources -->
+                <section id="natural-resources" class="mb-12 print-break-avoid">
+                    <h2 class="text-2xl font-bold mb-6 text-blue-800 section-title pb-2">الموارد الطبيعية</h2>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">الفوسفاط</h3>
+                        <p class="mb-4 editable" data-field="phosphate">يعتبر المغرب ثاني أكبر منتج للفوسفاط في العالم بعد الصين، حيث ينتج حوالي 40 مليون طن سنوياً. ويمتلك المغرب أكبر احتياطي من الفوسفاط في العالم، بما يعادل 70% من الاحتياطي العالمي، أي حوالي 50 مليار طن.</p>
+                        <p class="mb-4 editable" data-field="phosphate-mines">من أبرز مناجم الفوسفاط في المغرب: مناجم خريبكة، مناجم اليوسفية، ومنجم بوكراع في الصحراء الغربية.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أكبر منجم للذهب في المغرب</h3>
+                        <p class="mb-4 editable" data-field="gold-mine">منجم أقا (أفلا اغير) يعتبر من أهم مناجم الذهب في المغرب، ويقع في الجنوب الشرقي للمملكة. كما يوجد منجم تسيت الذي يعد من أكبر وأهم مناجم الذهب في المغرب أيضاً.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">المناطق الصناعية الكبرى</h3>
+                        <p class="mb-4 editable" data-field="industrial-zones">من أبرز المناطق الصناعية في المغرب:</p>
+                        <ul class="list-disc pr-5 space-y-2 editable" data-field="industrial-zones-list">
+                            <li>منطقة التسريع الصناعي طنجة - أوطموتيف سيتي</li>
+                            <li>المنطقة الصناعية الدار البيضاء</li>
+                            <li>المنطقة الصناعية سيدي البرنوصي</li>
+                            <li>المنطقة الصناعية عين السبع</li>
+                            <li>منطقة التصدير الحرة بالقنيطرة</li>
+                            <li>منطقة التسريع الصناعي في مدينة كيناترا</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Section 6: Culture and Sports -->
+                <section id="culture-sports" class="mb-12 print-break-avoid">
+                    <h2 class="text-2xl font-bold mb-6 text-blue-800 section-title pb-2">الثقافة والرياضة</h2>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أقدم جامعة في العالم توجد في المغرب</h3>
+                        <p class="mb-4 editable" data-field="oldest-university">جامعة القرويين في مدينة فاس، تأسست عام 859 ميلادية، وتعتبر وفقاً لليونسكو وكتاب غينيس للأرقام القياسية أقدم مؤسسة تعليم عالٍ وأول جامعة تمنح إجازات علمية في العالم. تم تأسيسها على يد فاطمة الفهري.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أكبر ملعب في المغرب</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="largest-stadium">ملعب الحسن الثاني (الدار البيضاء)</p>
+                            <p class="text-sm text-gray-500 editable" data-field="largest-stadium-info">سيكون أحد أكبر ملاعب كرة القدم في العالم مع سعة تصل إلى 115 ألف متفرج عند اكتماله لاستضافة كأس العالم 2030</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أكبر مسجد في المغرب</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="largest-mosque">مسجد الحسن الثاني (الدار البيضاء)</p>
+                            <p class="text-sm text-gray-500 editable" data-field="largest-mosque-info">أكبر مسجد في المغرب وأفريقيا، والثالث عشر في العالم، ويحتوي على ثاني أطول مئذنة في العالم بارتفاع 210 مترًا</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أفضل إنجاز للمغرب في كأس العالم</h3>
+                        <p class="mb-4 editable" data-field="world-cup-achievement">حقق المنتخب المغربي أفضل إنجاز له في كأس العالم 2022 بقطر، حيث وصل إلى نصف النهائي، وأصبح أول منتخب أفريقي وعربي يصل إلى هذا الدور في تاريخ البطولة، واحتل المركز الرابع في المونديال.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أشهر عداء مغربي</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="famous-runner">هشام الكروج</p>
+                            <p class="text-sm text-gray-500 editable" data-field="famous-runner-info">من أشهر العدائين المغاربة في التاريخ، ويعتبر من أفضل عدائي سباق 1500 متر على الإطلاق، حيث لا يزال يحتفظ بالرقم القياسي العالمي</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">أشهر فنان تشكيلي مغربي</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="famous-artist">محمد المليحي</p>
+                            <p class="text-sm text-gray-500 editable" data-field="famous-artist-info">يعتبر من رواد الفن التشكيلي المغربي ورمز من رموز الحركة التشكيلية في المملكة. من الفنانين التشكيليين المشهورين أيضاً: الجيلالي الغرباوي، أحمد الشرقاوي، فريد بلكاهية</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 7: Historical and Tourist Places -->
+                <section id="historic-places" class="mb-12 print-break-avoid">
+                    <h2 class="text-2xl font-bold mb-6 text-blue-800 section-title pb-2">أماكن تاريخية وسياحية</h2>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">صومعة الكتبية</h3>
+                            <p class="text-sm text-gray-500 editable" data-field="koutoubia">مسجد الكتبية أو جامع الكتبيين في مراكش، يرجع لعهد الموحدين، اكتمل بناؤه في عهد يعقوب المنصور (1184-1199)</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">قصبة آيت بن حدو</h3>
+                            <p class="text-sm text-gray-500 editable" data-field="ait-ben-haddou">موقع تاريخي يقع في إقليم ورزازات، مصنف ضمن التراث العالمي لليونسكو منذ 1987</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">ساحة جامع الفنا</h3>
+                            <p class="text-sm text-gray-500 editable" data-field="jamaa-el-fna">ساحة شهيرة في مراكش، مسجلة في قائمة التراث العالمي اللامادي للإنسانية (اليونسكو)</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">أعلى برج في المغرب</h3>
+                        <p class="mb-4 editable" data-field="highest-tower">برج محمد السادس هو أطول برج في المغرب وأفريقيا، يقع في الرباط على ضفاف نهر أبي رقراق، ويبلغ ارتفاعه 250 متراً، ويُرى من مسافة 50 كيلومتراً. بدأت أشغال بنائه في عام 2016 بتكلفة تقدر بمليارات الدراهم.</p>
+                    </div>
+                </section>
+
+                <!-- Section 8: Global Rankings -->
+                <section id="global-rankings" class="mb-12 print-break-avoid">
+                    <h2 class="text-2xl font-bold mb-6 text-blue-800 section-title pb-2">التصنيفات الدولية</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">مؤشر التنمية البشرية</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="hdi-rank">المرتبة 120 عالمياً</p>
+                            <p class="text-sm text-gray-500 editable" data-field="hdi-info">حسب تقرير عام 2024، بتنقيط 0.682 من 1 (تحسن من 0.674 في عام 2021)</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">مؤشر ممارسة الأعمال</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="business-rank">المرتبة 53 عالمياً</p>
+                            <p class="text-sm text-gray-500 editable" data-field="business-info">حسب تقرير البنك الدولي "دوينغ بيزنس 2020" (آخر تقرير صدر)</p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">مؤشر الحرية الصحفية</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="press-freedom-rank">المرتبة 129 عالمياً</p>
+                            <p class="text-sm text-gray-500 editable" data-field="press-freedom-info">حسب تقرير "مراسلون بلا حدود" لعام 2024 (تقدم بـ 15 مركزاً مقارنة بعام 2023)</p>
+                        </div>
+
+                        <div class="stat-card bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">معدل التساقطات المطرية</h3>
+                            <p class="text-2xl font-bold text-blue-600 mb-2 editable" data-field="rainfall-rate">112 ملم</p>
+                            <p class="text-sm text-gray-500 editable" data-field="rainfall-info">حسب معطيات 2025 (في الفترة من 1 سبتمبر 2024 إلى 15 مارس 2025)، مع وجود تفاوت كبير بين المناطق</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-700 mb-4">حادثة زلزال أكادير</h3>
+                        <p class="mb-4 editable" data-field="agadir-earthquake">ضرب زلزال مدمر مدينة أكادير في 29 فبراير 1960، على الساعة 23:40 مساءً، وكان أحد أكثر الزلازل فتكاً وتدميراً في التاريخ المغربي بدرجة 5.7 على سلم ريشتر، حيث قتل حوالي 15,000 شخص (حوالي ثلث سكان المدينة في ذلك الوقت).</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="py-6 border-t border-gray-200 mt-10 text-center">
+<p class="text-gray-500">© 2025 - موقع معلومات وإحصائيات المغرب - مالك الصفحة: عزيز السعدي</p>
+            <p class="text-gray-400 text-sm mt-2">هذه المعلومات قابلة للتعديل والتحديث</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const editToggleBtn = document.getElementById('editToggle');
+            const saveChangesBtn = document.getElementById('saveChanges');
+            const editableElements = document.querySelectorAll('.editable');
+            
+            let isEditMode = false;
+            
+            // Toggle edit mode
+            editToggleBtn.addEventListener('click', function() {
+                isEditMode = !isEditMode;
+                
+                editableElements.forEach(el => {
+                    el.contentEditable = isEditMode;
+                });
+                
+                if (isEditMode) {
+                    editToggleBtn.textContent = 'إلغاء التعديل';
+                    editToggleBtn.classList.remove('bg-blue-500', 'hover:bg-blue-700');
+                    editToggleBtn.classList.add('bg-red-500', 'hover:bg-red-700');
+                    saveChangesBtn.classList.remove('hidden');
+                } else {
+                    editToggleBtn.textContent = 'تفعيل وضع التعديل';
+                    editToggleBtn.classList.remove('bg-red-500', 'hover:bg-red-700');
+                    editToggleBtn.classList.add('bg-blue-500', 'hover:bg-blue-700');
+                    saveChangesBtn.classList.add('hidden');
+                }
+            });
+            
+            // Save changes (in this demo, we'll just disable editing)
+            saveChangesBtn.addEventListener('click', function() {
+                isEditMode = false;
+                
+                editableElements.forEach(el => {
+                    el.contentEditable = false;
+                });
+                
+                editToggleBtn.innerHTML = '<i class="fas fa-edit mr-2"></i> تفعيل وضع التعديل';
+                editToggleBtn.classList.remove('bg-red-500', 'hover:bg-red-700');
+                editToggleBtn.classList.add('bg-blue-500', 'hover:bg-blue-700');
+                saveChangesBtn.classList.add('hidden');
+                
+                // Show success message
+                alert('تم حفظ التغييرات بنجاح!');
+            });
+        });
+    </script>
+</body>
+</html>
